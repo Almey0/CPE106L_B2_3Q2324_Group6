@@ -15,6 +15,7 @@ def getWords(filename):
 		d.close
 	return Words 
 
+
 articles = getWords('articles.txt')
 nouns = getWords('nouns.txt')
 verbs = getWords('verbs.txt')
