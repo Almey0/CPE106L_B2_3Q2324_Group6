@@ -14,7 +14,10 @@ def getWords(filename):
 		Words = tuple(temp_list)
 		d.close
 	return Words 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 90df305 (changed)
 
 articles = getWords('articles.txt')
 nouns = getWords('nouns.txt')
