@@ -10,12 +10,10 @@ def getWords(filename):
 	d = open(filename)
 	temp_list = list()
 	for each_line in d:
-		temp_list.append(each_line)
+		temp_list.append(each_line.strip())
 		Words = tuple(temp_list)
 		d.close
-	return Words
-   
-    
+	return Words 
 
 articles = getWords('articles.txt')
 nouns = getWords('nouns.txt')
