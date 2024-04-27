@@ -1,15 +1,17 @@
 from median import *
 from mode import *
+import sys
 
 def mean():
     filename = input("Enter the file name: ")
     f = open(filename, 'r')
     
     length = 0
+    total = 0
     for line in f:
         num = line.split()
         for index in num:
-            total += float(index)
+            total = total + float(index)
             length = length + 1
     
     result = total / length
@@ -17,17 +19,12 @@ def mean():
     print("The mean is", result)         
 
 def stats():
-    input = int(print("""
-          Choose Statistics:
-          0: Exit
-          1: Mean
-          2: Median
-          3: Mode
-          """))
+    choice = int(input("\nChoose Statistics:\n0: Exit\n1: Mean\n2: Median\n3: Mode\nChoice: "))
     
-    match input:
+    match choice:
         case 0:
-            print()
+            print("Exiting...")
+            sys.exit()
         case 1:
             mean()
         case 2:
@@ -35,4 +32,5 @@ def stats():
         case 3:
             mode()
         case _:
+            print("Invalid Option\n")
             stats() 

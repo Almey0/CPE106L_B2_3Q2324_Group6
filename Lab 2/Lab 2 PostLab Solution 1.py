@@ -12,7 +12,10 @@ Include a main function that tests the three statistical functions with a given 
 from stats import *
 
 def main():
-    stats()
+    while True:
+        stats()
 
 if __name__ == '__main__':
     main()
+
+# use this file "solution2_test.txt"
