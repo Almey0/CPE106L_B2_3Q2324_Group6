@@ -18,4 +18,4 @@ def main():
 if __name__ == '__main__':
     main()
 
-# use this file "solution2_test.txt"
+# use this file "solution1_test.txt"
