@@ -6,6 +6,8 @@ and vocabulary.  Words are chosen at random.
 """
 
 import random
+
+
 def getWords(filename):
 	d = open(filename)
 	temp_list = list()
@@ -14,10 +16,6 @@ def getWords(filename):
 		Words = tuple(temp_list)
 		d.close
 	return Words 
-<<<<<<< HEAD
-
-=======
->>>>>>> 90df305 (changed)
 
 articles = getWords('articles.txt')
 nouns = getWords('nouns.txt')
@@ -41,7 +39,7 @@ def prepositionalPhrase():
 	"""Builds and returns a prepositional phrase."""
 	return random.choice(prepositions) + " " + nounPhrase()
 
-def main():
+def generator():
 	"""Allows the user to input the number of sentences to generate."""
 	number = int(input("Enter the number of sentences: "))
 	for count in range(number):
@@ -49,6 +47,6 @@ def main():
    
 
 
-main()
+generator()
 
 
