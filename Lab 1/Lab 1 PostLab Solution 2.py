@@ -27,3 +27,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
+# use the file "solution1_test.txt"
