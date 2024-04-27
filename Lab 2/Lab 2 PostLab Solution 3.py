@@ -9,11 +9,11 @@ add them to the list. The function should then convert the list to atuple and re
 Call the function with an actual filename to initialize each of the four variables for the vocabulary.)
 '''
 
-from generator import *
+from generator_modified import generator
 
 def main():
     while True:
-       generator()
+        main()
 
 if __name__ == '__main__':
     main()

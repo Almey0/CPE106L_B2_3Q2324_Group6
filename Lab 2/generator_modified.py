@@ -39,7 +39,7 @@ def prepositionalPhrase():
 	"""Builds and returns a prepositional phrase."""
 	return random.choice(prepositions) + " " + nounPhrase()
 
-def generator():
+def main():
 	"""Allows the user to input the number of sentences to generate."""
 	number = int(input("Enter the number of sentences: "))
 	for count in range(number):
@@ -47,6 +47,6 @@ def generator():
    
 
 
-generator()
+main()
 
 
